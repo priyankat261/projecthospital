@@ -1,0 +1,24 @@
+<h2>Patient details</h2>
+<hr>
+<div *ngIf="patient">
+  <div>
+    <label><b>Patient Id: </b></label> {{patient.patId}}
+  </div>
+  <div>
+    <label><b>Patient Name: </b></label> {{patient.patName}}
+  </div>
+  <div>
+    <label><b>Patient BloodGroup: </b></label> {{patient.bloodGroup}}
+  </div>
+  <div>
+    <label><b>Patient Gender: </b></label> {{patient.patGender}}
+  </div>
+  <div>
+    <label><b>Patient EmailId: </b></label> {{patient.patemail}}
+  </div>
+  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Patient List</button><br>
